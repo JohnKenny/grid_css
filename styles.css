@@ -1,0 +1,22 @@
+.wrapper {
+    display: grid;
+    /* define width of columns */
+    grid-template-columns: 70% 30% ;
+    /* set gap between columns */
+    grid-column-gap: .5em;
+    /* set gap between rows */
+    grid-row-gap: 1em;
+
+    /* set gap for columns and rows 
+    grid-gap: 1em; */
+}
+
+.wrapper > div {
+    background: #eee;
+    padding: 1em;
+}
+
+/* For every odd element */
+.wrapper > div:nth-child(odd){
+    background: #ddd;
+}
